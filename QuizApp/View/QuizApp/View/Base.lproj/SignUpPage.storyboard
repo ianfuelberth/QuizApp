@@ -15,29 +15,139 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SignUpPage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-ww-GkV">
-                                <rect key="frame" x="186" y="163" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNr-cB-s7v">
-                                <rect key="frame" x="194" y="381" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <segue destination="ntf-Yy-iXv" kind="modal" identifier="toCategoryPage" modalPresentationStyle="fullScreen" id="GeE-Hq-g8y"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="DQN-gm-uz9">
+                                <rect key="frame" x="25" y="44" width="364" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGO-iS-LG8">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayd-ww-GkV">
+                                                <rect key="frame" x="74" y="-8" width="216" height="66.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="53"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.60644412039999995" green="0.11065364630000001" blue="0.1215436682" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <size key="shadowOffset" width="9" height="3"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ayd-ww-GkV" firstAttribute="centerX" secondItem="TGO-iS-LG8" secondAttribute="centerX" id="JIu-57-BgJ"/>
+                                            <constraint firstItem="ayd-ww-GkV" firstAttribute="centerY" secondItem="TGO-iS-LG8" secondAttribute="centerY" id="cvv-Zp-NSs"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="avG-yj-68A">
+                                        <rect key="frame" x="0.0" y="64" width="364" height="557.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-gS-d3e">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="136"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98g-an-N3x">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWU-Gz-MOG">
+                                                        <rect key="frame" x="0.0" y="44" width="364" height="92"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="kWU-Gz-MOG" secondAttribute="trailing" id="DUP-uZ-wWV"/>
+                                                    <constraint firstItem="kWU-Gz-MOG" firstAttribute="leading" secondItem="c9T-gS-d3e" secondAttribute="leading" id="RHP-6I-3RC"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kdV-Zk-JyN">
+                                                <rect key="frame" x="0.0" y="211" width="364" height="135.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mD-g9-Ski">
+                                                        <rect key="frame" x="0.0" y="0.0" width="165" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-20-Gr8">
+                                                        <rect key="frame" x="0.0" y="44" width="364" height="91.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="JZL-20-Gr8" firstAttribute="leading" secondItem="kdV-Zk-JyN" secondAttribute="leading" id="Pyu-BQ-8gz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JZL-20-Gr8" secondAttribute="trailing" id="ker-mb-jja"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t59-Kx-HGy">
+                                                <rect key="frame" x="0.0" y="421.5" width="364" height="136"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI0-QL-lRi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-E5-Fyd">
+                                                        <rect key="frame" x="0.0" y="44" width="364" height="92"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="9bk-E5-Fyd" secondAttribute="trailing" id="Ch9-Ts-w9j"/>
+                                                    <constraint firstItem="9bk-E5-Fyd" firstAttribute="leading" secondItem="t59-Kx-HGy" secondAttribute="leading" id="rKS-Kw-wAB"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-BY-Cta">
+                                        <rect key="frame" x="0.0" y="635.5" width="364" height="182.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNr-cB-s7v">
+                                                <rect key="frame" x="0.0" y="76" width="364" height="30"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Sign Up" backgroundImage="rectangle.fill" catalog="system">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signUpButton:" destination="ZOH-ii-Nae" eventType="touchUpInside" id="Tih-V9-tGX"/>
+                                                    <segue destination="ntf-Yy-iXv" kind="modal" identifier="toCategoryPage" modalPresentationStyle="fullScreen" id="GeE-Hq-g8y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="hNr-cB-s7v" secondAttribute="bottom" constant="75" id="CiE-5i-iQt"/>
+                                            <constraint firstItem="hNr-cB-s7v" firstAttribute="top" secondItem="xFN-BY-Cta" secondAttribute="top" constant="75" id="YQE-PQ-T7Q"/>
+                                            <constraint firstItem="hNr-cB-s7v" firstAttribute="leading" secondItem="xFN-BY-Cta" secondAttribute="leading" id="gxM-hh-EpM"/>
+                                            <constraint firstAttribute="trailing" secondItem="hNr-cB-s7v" secondAttribute="trailing" id="jhG-w0-gTI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="avG-yj-68A" firstAttribute="leading" secondItem="DQN-gm-uz9" secondAttribute="leading" id="R81-Cg-gwf"/>
+                                    <constraint firstAttribute="trailing" secondItem="avG-yj-68A" secondAttribute="trailing" id="skn-2a-ILe"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DQN-gm-uz9" firstAttribute="leading" secondItem="MSW-kM-gUE" secondAttribute="leading" constant="25" id="Uen-ya-Jxe"/>
+                            <constraint firstItem="MSW-kM-gUE" firstAttribute="trailing" secondItem="DQN-gm-uz9" secondAttribute="trailing" constant="25" id="VLT-n4-3Od"/>
+                            <constraint firstItem="MSW-kM-gUE" firstAttribute="bottom" secondItem="DQN-gm-uz9" secondAttribute="bottom" id="i6W-zJ-WND"/>
+                            <constraint firstItem="DQN-gm-uz9" firstAttribute="top" secondItem="MSW-kM-gUE" secondAttribute="top" id="s6M-J2-d5B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MSW-kM-gUE"/>
                     </view>
+                    <connections>
+                        <outlet property="nameResponse" destination="kWU-Gz-MOG" id="Wgg-TJ-7zv"/>
+                        <outlet property="passwordResponse" destination="9bk-E5-Fyd" id="Erj-bp-mDb"/>
+                        <outlet property="usernameResponse" destination="JZL-20-Gr8" id="lUn-nX-FZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzS-AQ-NYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="488"/>
+            <point key="canvasLocation" x="915.94202898550736" y="487.5"/>
         </scene>
         <!--CategoriesPage-->
         <scene sceneID="tJ0-kG-YwL">
@@ -48,4 +158,7 @@
             <point key="canvasLocation" x="1520" y="488"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+    </resources>
 </document>

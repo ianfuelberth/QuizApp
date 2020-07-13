@@ -107,10 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				D48D383724BCAD8A0006ABBB /* ViewController.swift */,
-				D48D385B24BCB1250006ABBB /* QuestionPageViewController.swift */,
 				D48D386A24BCB5190006ABBB /* SignInPageViewController.swift */,
 				D48D386C24BCB52E0006ABBB /* SignUpPageViewController.swift */,
 				D48D386E24BCB5450006ABBB /* CategoriesPageViewController.swift */,
+				D48D385B24BCB1250006ABBB /* QuestionPageViewController.swift */,
 				D48D387024BCB55C0006ABBB /* ResultsPageViewController.swift */,
 			);
 			path = Controller;

@@ -10,10 +10,20 @@ import UIKit
 
 class SignUpPageViewController: UIViewController {
 
+    @IBOutlet weak var nameResponse: UITextField!
+    @IBOutlet weak var usernameResponse: UITextField!
+    @IBOutlet weak var passwordResponse: UITextField!
+    
+    @IBAction func signUpButton(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+    print("Jillian is working on this page")
     }
     
 
