@@ -96,8 +96,8 @@
 				D48D383924BCAD8A0006ABBB /* Main.storyboard */,
 				D48D385D24BCB41F0006ABBB /* SignInPage.storyboard */,
 				D48D386724BCB4810006ABBB /* SignUpPage.storyboard */,
-				D48D386524BCB46D0006ABBB /* CategoriesPage.storyboard */,
 				D48D386224BCB4560006ABBB /* QuestionPage.storyboard */,
+				D48D386524BCB46D0006ABBB /* CategoriesPage.storyboard */,
 				D48D386024BCB4450006ABBB /* ResultsPage.storyboard */,
 			);
 			path = View;

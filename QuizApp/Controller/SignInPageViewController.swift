@@ -10,9 +10,14 @@ import UIKit
 
 class SignInPageViewController: UIViewController {
 
+    
+    @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    
+    @IBOutlet weak var signInButton: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
