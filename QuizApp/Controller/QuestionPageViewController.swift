@@ -10,6 +10,8 @@ import UIKit
 
 class QuestionPageViewController: UIViewController {
 
+    @IBOutlet weak var submitButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
