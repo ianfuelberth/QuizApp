@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var sighIn: UIButton!
+    @IBOutlet weak var signUp: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //sighIn.layer.cornerRadius = 25.0
+        //signUp.layer.cornerRadius = 25.0
     }
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
