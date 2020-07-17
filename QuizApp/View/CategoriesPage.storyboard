@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbC-43-UEQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -46,6 +46,9 @@
                                 <rect key="frame" x="169" y="516" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Category 5"/>
+                                <connections>
+                                    <segue destination="iGg-i4-HxX" kind="show" id="468-CI-g68"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -62,10 +65,15 @@
         <!--QuestionPage-->
         <scene sceneID="5To-BB-cG6">
             <objects>
-                <viewControllerPlaceholder storyboardName="QuestionPage" id="iGg-i4-HxX" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="QuestionPage" id="iGg-i4-HxX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KhV-qj-hWh"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="to8-Hn-4PY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2262" y="198"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="p7l-ZB-C7n"/>
+    </inferredMetricsTieBreakers>
 </document>
