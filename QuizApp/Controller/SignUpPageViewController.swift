@@ -7,16 +7,34 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpPageViewController: UIViewController {
 
-    @IBOutlet weak var nameResponse: UITextField!
+    @IBOutlet weak var nameResponse: UITextField! //email
     @IBOutlet weak var usernameResponse: UITextField!
     @IBOutlet weak var passwordResponse: UITextField!
     
     @IBAction func signUpButton(_ sender: UIButton) {
+        
+        if let email = nameResponse.text, let password = passwordResponse.text
+        {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error
+                {
+                    print(e.localizedDescription)
+                    
+                }
+                else
+                {
+                    //Navigate to chat view controller
+                    self.performSegue(withIdentifier: "toCategoryPage", sender: self)
+                }
+            }
+        }
+
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +43,7 @@ class SignUpPageViewController: UIViewController {
     
     print("Jillian is working on this page")
     }
+    
     
 
     /*
