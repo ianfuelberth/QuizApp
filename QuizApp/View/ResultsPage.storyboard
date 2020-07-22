@@ -71,7 +71,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5Vy-Z7-BSj" kind="modal" identifier="backToCategoryPage" modalPresentationStyle="fullScreen" id="Rpw-bt-OGQ"/>
+                                            <action selector="backToCategoriesPressed:" destination="gqV-gw-MkO" eventType="touchUpInside" id="gEb-4U-G4Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -97,6 +97,7 @@
                         <outlet property="categoryImage" destination="k43-Tr-lfq" id="S79-tM-sYP"/>
                         <outlet property="gradeLabel" destination="3En-ja-11j" id="Z7E-Et-qqe"/>
                         <outlet property="resultLabel" destination="qpd-xL-gHl" id="gv7-3D-cfW"/>
+                        <segue destination="5Vy-Z7-BSj" kind="modal" identifier="backToCategoryPage" id="g7x-Eg-CLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLJ-bQ-pqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

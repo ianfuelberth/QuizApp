@@ -15,14 +15,16 @@ class ResultsPageViewController: UIViewController {
     @IBOutlet weak var categoryImage: UIImageView!
     
     var totalCorrect: Int = 0
-    var totalQuestions: Int = 1
+    var totalQuestions: Int = 3
+    
+    var category: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let gradePercent = Double(totalCorrect)/Double(totalQuestions)
-        if(gradePercent > 0.75){
-            resultLabel.text = "You Passed!"
+        let gradePercent = Double(totalCorrect)/3.0
+        if(gradePercent > 0.66){
+            resultLabel.text = "Good Job!"
         } else {
             resultLabel.text = "Study More!"
         }
@@ -32,6 +34,8 @@ class ResultsPageViewController: UIViewController {
         
     }
     
+    @IBAction func backToCategoriesPressed(_ sender: UIButton) {
+        
+    }
     
-
 }
