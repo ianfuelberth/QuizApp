@@ -15,7 +15,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GhS-eV-l1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="198"/>
+            <point key="canvasLocation" x="3204" y="234"/>
         </scene>
         <!--Question Page View Controller-->
         <scene sceneID="Ekb-SF-Z50">
@@ -63,18 +63,21 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.61620563269999995" green="0.1106993183" blue="0.1215268597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                         <integer key="value" value="0"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="wMe-4l-JTu" appends="YES" id="fG3-cO-VwC"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ey9-1f-ST7">
                                                                 <rect key="frame" x="131.66666666666663" y="0.0" width="226.33333333333337" height="124.33333333333333"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="Answer1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Bze-IK-uOy">
-                                                                        <rect key="frame" x="80" y="53" width="64" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="ChoiceA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Bze-IK-uOy">
+                                                                        <rect key="frame" x="80" y="53" width="65" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -105,18 +108,22 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.61620563269999995" green="0.1106993183" blue="0.1215268597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <gestureRecognizers/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                         <integer key="value" value="0"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="Qc7-Qf-JSj" appends="YES" id="WCh-lM-3Pp"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hPG-u9-obG">
                                                                 <rect key="frame" x="131.66666666666663" y="0.0" width="226.33333333333337" height="124.66666666666667"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="Answer1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-JS-qt1">
-                                                                        <rect key="frame" x="81" y="51" width="64" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="ChoiceB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bq-JS-qt1">
+                                                                        <rect key="frame" x="81" y="51" width="65" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -147,18 +154,22 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.61620563269999995" green="0.1106993183" blue="0.1215268597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <gestureRecognizers/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                         <integer key="value" value="0"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="DPL-N8-9T9" appends="YES" id="iMv-M1-ieb"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gHH-Wa-xNa">
                                                                 <rect key="frame" x="131.66666666666663" y="0.0" width="226.33333333333337" height="124.33333333333333"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="Answer1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-lb-oZx">
-                                                                        <rect key="frame" x="80" y="53" width="64" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="ChoiceC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="oiX-lb-oZx">
+                                                                        <rect key="frame" x="80" y="53" width="66" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -189,18 +200,22 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.61620563269999995" green="0.1106993183" blue="0.1215268597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <gestureRecognizers/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                                         <integer key="value" value="0"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="mUf-mb-kAp" appends="YES" id="qwE-7t-2Sg"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Afo-I3-Avg">
                                                                 <rect key="frame" x="131.66666666666663" y="0.0" width="226.33333333333337" height="124.33333333333333"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="Answer1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-LB-8dT">
-                                                                        <rect key="frame" x="80" y="52" width="64" height="21"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" fixedFrame="YES" text="ChoiceD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-LB-8dT">
+                                                                        <rect key="frame" x="80" y="52" width="66" height="21"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -262,7 +277,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="dez-H9-ay6" kind="show" id="Ysd-t6-Aey"/>
+                                    <action selector="okPressed:" destination="YAs-cu-IK1" eventType="touchUpInside" id="I2v-CW-a0y"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-LM-WzG">
@@ -287,12 +302,43 @@
                         <viewLayoutGuide key="safeArea" id="Yx9-O5-eFW"/>
                     </view>
                     <connections>
+                        <outlet property="boxA" destination="TgD-h0-BMq" id="6mH-vd-DK9"/>
+                        <outlet property="boxB" destination="tRv-Fc-YJE" id="efF-Q8-xjn"/>
+                        <outlet property="boxC" destination="aPW-xF-aeP" id="81r-bZ-i26"/>
+                        <outlet property="boxD" destination="ykF-2W-t0c" id="kih-3o-kIc"/>
+                        <outlet property="categoryImage" destination="pPS-LM-WzG" id="lCb-3v-Gtj"/>
+                        <outlet property="choiceA" destination="Bze-IK-uOy" id="2Yg-3Y-7Te"/>
+                        <outlet property="choiceB" destination="9bq-JS-qt1" id="LK6-bR-Atd"/>
+                        <outlet property="choiceC" destination="oiX-lb-oZx" id="sHB-ra-Kmb"/>
+                        <outlet property="choiceD" destination="2GK-LB-8dT" id="aWk-AO-NSf"/>
+                        <outlet property="questionLabel" destination="K4U-2E-gRl" id="gWl-3b-H4Y"/>
                         <outlet property="submitButton" destination="01x-Yj-ciG" id="iB9-nZ-VJw"/>
+                        <segue destination="dez-H9-ay6" kind="modal" identifier="toResultsPage" modalPresentationStyle="fullScreen" id="tjN-hD-B9R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad9-FB-Tmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wMe-4l-JTu">
+                    <connections>
+                        <action selector="tappedA:" destination="YAs-cu-IK1" id="nTU-cY-etY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Qc7-Qf-JSj">
+                    <connections>
+                        <action selector="tappedB:" destination="YAs-cu-IK1" id="Cm3-ST-i5P"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DPL-N8-9T9">
+                    <connections>
+                        <action selector="tappedC:" destination="YAs-cu-IK1" id="gna-Y1-vU9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mUf-mb-kAp">
+                    <connections>
+                        <action selector="tappedD:" destination="YAs-cu-IK1" id="4PI-CE-xPL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2434.7826086956525" y="201.5625"/>
+            <point key="canvasLocation" x="2629" y="234"/>
         </scene>
     </scenes>
 </document>

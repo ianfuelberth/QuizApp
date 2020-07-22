@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignInPageViewController: UIViewController {
 
@@ -21,7 +23,24 @@ class SignInPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signInPressed(_ sender: UIButton) {
+        if let email = usernameText.text, let password = passwordText.text
+        {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error
+                {
+                    print(e.localizedDescription)
+                    
+                }
+                else
+                {
+                    //Navigate to chat view controller
+                    self.performSegue(withIdentifier: "toCategoryPage", sender: self)
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

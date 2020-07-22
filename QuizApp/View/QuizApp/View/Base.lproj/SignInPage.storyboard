@@ -41,8 +41,8 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-Zw-Whl">
                                                 <rect key="frame" x="12" y="47" width="377" height="113.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-9m-a1p">
-                                                        <rect key="frame" x="0.0" y="0.0" width="165" height="36"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-9m-a1p">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="36"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -104,7 +104,8 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="rQB-5f-kev" kind="modal" destinationCreationSelector="toCategoryPage" modalPresentationStyle="fullScreen" id="KeY-uR-SBC"/>
+                                                    <action selector="signInPressed:" destination="zxE-W9-iJ2" eventType="touchUpInside" id="D9i-lN-2v4"/>
+                                                    <segue destination="rQB-5f-kev" kind="modal" identifier="toCategoryPage" modalPresentationStyle="fullScreen" id="KeY-uR-SBC"/>
                                                 </connections>
                                             </button>
                                         </subviews>
