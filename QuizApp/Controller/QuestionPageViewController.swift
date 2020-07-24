@@ -52,6 +52,8 @@ class QuestionPageViewController: UIViewController {
         questionNum = 0
         // Do any additional setup after loading the view.
         
+        categoryImage.image = UIImage(systemName: categoryPic)
+        
         db.collection(category).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents, \(err)")
@@ -134,7 +136,7 @@ class QuestionPageViewController: UIViewController {
         let RPVC = segue.destination as! ResultsPageViewController
         RPVC.category = category
         RPVC.totalCorrect = totalCorrect
-        RPVC.categoryImage = categoryImage
+        RPVC.categoryPic = categoryPic
     }
     
     //MARK: - Gesture Recognizers

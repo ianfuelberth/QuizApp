@@ -18,9 +18,12 @@ class ResultsPageViewController: UIViewController {
     var totalQuestions: Int = 3
     
     var category: String = ""
+    var categoryPic: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        categoryImage.image = UIImage(systemName: categoryPic)
         
         let gradePercent = Double(totalCorrect)/3.0
         if(gradePercent > 0.66){
@@ -33,9 +36,7 @@ class ResultsPageViewController: UIViewController {
         
         
     }
-    
-    @IBAction func backToCategoriesPressed(_ sender: UIButton) {
-        
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        print("button pressed")
     }
-    
 }

@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-Hy-8Lq">
-                                <rect key="frame" x="139" y="119" width="136" height="462"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-Hy-8Lq">
+                                <rect key="frame" x="139" y="217" width="136" height="462"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="rTM-dQ-cd3">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
@@ -117,6 +117,10 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1yY-Hy-8Lq" firstAttribute="centerY" secondItem="ECt-rm-vfx" secondAttribute="centerY" id="FLq-61-stY"/>
+                            <constraint firstItem="1yY-Hy-8Lq" firstAttribute="centerX" secondItem="ECt-rm-vfx" secondAttribute="centerX" id="akL-RJ-Nqj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZnZ-ht-qu1"/>
                     </view>
                     <connections>

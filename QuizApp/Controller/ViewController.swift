@@ -17,11 +17,6 @@ class ViewController: UIViewController {
         //sighIn.layer.cornerRadius = 25.0
         //signUp.layer.cornerRadius = 25.0
     }
-    
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
-    {
-        
-    }
 
 }
 
