@@ -62,27 +62,27 @@
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0d5-3X-z72">
                                 <rect key="frame" x="0.0" y="517" width="414" height="202"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd3-v3-wAP">
-                                        <rect key="frame" x="122" y="79" width="169" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Back to Categories">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backToCategoriesPressed:" destination="gqV-gw-MkO" eventType="touchUpInside" id="gEb-4U-G4Q"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd3-v3-wAP">
+                                <rect key="frame" x="142" y="757" width="130" height="44"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back to Categories">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="gqV-gw-MkO" eventType="touchUpInside" id="0Vt-ZD-1dx"/>
+                                    <segue destination="SVl-V4-3j5" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="wTf-v1-dcQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0d5-3X-z72" firstAttribute="leading" secondItem="1G5-lW-IoE" secondAttribute="leading" id="318-Wf-K7l"/>
                             <constraint firstItem="u7c-gi-Dw6" firstAttribute="top" secondItem="1G5-lW-IoE" secondAttribute="top" id="IdT-LV-Vv8"/>
+                            <constraint firstItem="nd3-v3-wAP" firstAttribute="centerX" secondItem="6sY-ck-wgh" secondAttribute="centerX" id="RjY-ns-0w4"/>
                             <constraint firstItem="1G5-lW-IoE" firstAttribute="trailing" secondItem="2zz-78-EPv" secondAttribute="trailing" constant="30" id="YLo-Yo-KY3"/>
+                            <constraint firstItem="nd3-v3-wAP" firstAttribute="top" secondItem="0d5-3X-z72" secondAttribute="bottom" constant="38" id="YsD-vq-Ed9"/>
                             <constraint firstItem="2zz-78-EPv" firstAttribute="leading" secondItem="1G5-lW-IoE" secondAttribute="leading" constant="30" id="gpb-V2-JzH"/>
                             <constraint firstItem="u7c-gi-Dw6" firstAttribute="leading" secondItem="1G5-lW-IoE" secondAttribute="leading" id="l38-aH-r5T"/>
                             <constraint firstItem="2zz-78-EPv" firstAttribute="top" secondItem="u7c-gi-Dw6" secondAttribute="bottom" constant="19" id="suH-ec-R2h"/>
@@ -97,20 +97,12 @@
                         <outlet property="categoryImage" destination="k43-Tr-lfq" id="S79-tM-sYP"/>
                         <outlet property="gradeLabel" destination="3En-ja-11j" id="Z7E-Et-qqe"/>
                         <outlet property="resultLabel" destination="qpd-xL-gHl" id="gv7-3D-cfW"/>
-                        <segue destination="5Vy-Z7-BSj" kind="modal" identifier="backToCategoryPage" id="g7x-Eg-CLo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLJ-bQ-pqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SVl-V4-3j5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3186.9565217391305" y="197.54464285714286"/>
-        </scene>
-        <!--CategoriesPage-->
-        <scene sceneID="3zM-W6-Feo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CategoriesPage" id="5Vy-Z7-BSj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vlj-vw-8nt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3785" y="198"/>
         </scene>
     </scenes>
     <resources>

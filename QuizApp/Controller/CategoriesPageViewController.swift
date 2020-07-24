@@ -55,16 +55,20 @@ class CategoriesPageViewController: UIViewController {
         switch userCategoryChoice
         {
         case "Food":
-            QPVC.categoryImage.image = foodImage.image
+            QPVC.categoryPic = "cart.fill"
         case "Language":
-            QPVC.categoryImage.image = languageImage.image
+            QPVC.categoryPic = "book.fill"
         case "NationalForests":
-            QPVC.categoryImage.image = nationalForestImage.image
+            QPVC.categoryPic = "photo"
         case "Disney":
-            QPVC.categoryImage.image = disneyImage.image
+            QPVC.categoryPic = "airplane"
         default:
-            QPVC.categoryImage.image = geographyImage.image
+            QPVC.categoryPic = "map.fill"
         }
+    }
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
+        print("unwound")
     }
 
 }
